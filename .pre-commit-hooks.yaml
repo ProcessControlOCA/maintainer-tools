@@ -1,0 +1,20 @@
+- id: fix-manifest-website
+  name: Fix the manifest website key
+  entry: fix-manifest-website
+  pass_filenames: false
+  language: python
+  files: (__manifest__\.py)$
+
+- id: fix-manifest-author
+  name: Fix the manifest author key
+  entry: fix-manifest-author
+  pass_filenames: false
+  language: python
+  files: (__manifest__\.py)$
+
+- id: gen-addon-icon
+  name: Generate addons icons
+  always_run: true
+  entry: gen-addon-icon
+  language: python
+  pass_filenames: false
